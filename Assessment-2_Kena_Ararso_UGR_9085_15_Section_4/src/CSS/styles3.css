@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+h3{
+    font-size: 1em;
+}
+p{
+    font-size: .75em;
+}
+
+a {
+    color: #73b40e;
+    text-decoration: underline;
+}
+
+.more {
+    color: #db7835;
+}
+
+header {
+    width: 100%;
+    height: 223px;
+    border: 2px solid rgba(0, 10, 0, 0.9);
+    background: rgba(0, 10, 0, 0.82);
+}
+
+header .container {
+    width: 75%;
+    margin: 0 18%;
+}
+
+.container .logo {
+    line-height: 0;
+    margin: 0.7em;
+    padding: 1em;
+    padding-left: 0;
+    color: #db7835;
+}
+
+.logo p {
+    color: white;
+    font-size: 1.1em;
+    padding-left: 230px;
+}
+
+.logo h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5em;
+}
+
+.logo h1 span {
+    color: rgb(255, 255, 255);
+}
+
+.menu_nav {
+    float: left;
+    width: 700px;
+}
+
+#head_nav ul {
+    display: flex;
+    gap: 1.5%;
+    margin-left: 0;
+    padding-left: 0;
+    align-items: flex-end; /* Align the items at the bottom */
+    height: 100%; /* Ensure the ul takes full height of the header */
+}
+
+#head_nav ul li {
+    margin: 0;
+    padding: 20px 0 0;
+    list-style: none;
+    background: rgb(50, 245, 50);
+    border-radius: 5px;
+    padding: 0.4em;
+}
+
+#head_nav li:first-child {
+    background: rgba(255, 123, 0, 0.822);
+}
+
+#head_nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-variant: small-caps;
+    padding: 0.4em;
+}
+
+#head_nav li:hover {
+    background: rgba(255, 123, 0, 0.822);
+}
+
+/** Section 1 **/
+
+.sec1 {
+    width: 64%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5%;
+    margin: 1% 18% 3% 18%;
+}
+
+.sec1 h2 {
+    color: rgb(38, 100, 38);
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+article, aside {
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+
+.sidebar_menu li, .sponsors li {
+    list-style: none;
+}
+
+.sidebar_menu a {
+    color: black;
+    text-decoration: none;
+}
+
+.sidebar_menu a:hover {
+    color: #73b40e;
+}
+
+textarea {
+    width: 100%;
+    height: 20vh;
+}
+
+/**Section 2**/
+.sec2 {
+    width: 100%;
+    border: 2px solid rgba(0, 10, 0, 0.9);
+    background: rgba(0, 10, 0, 0.9);
+    color: white;
+}
+
+.sec2 .container2 {
+    width: 60%;
+    margin: 0 18%;
+    display: flex;
+    gap: 5%;
+}
+
+.container2 .bottom {
+    width: 35%;
+}
+
+/* Gallery image layout */
+.Gallery .images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 10px; /* Space between images */
+    justify-content: center;
+    align-items: center;
+}
+
+.Gallery .images img {
+    width: 79px; /* Uniform width */
+    height: 79px; /* Uniform height */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow */
+}
+
+.container2 .images img {
+    margin: 1.5%; /* Space between images */
+}
+
+.About img {
+    width: 83px;
+    height: 70px;
+    float: left;
+    margin: 1.5% 4% 0 0;
+}
+
+footer {
+    width: 100%;
+    border-top: 1px solid white;
+    background: rgba(0, 10, 0, 0.918);
+    color: white;
+}
+
+footer .container3 {
+    width: 64%;
+    margin: 0 18%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container3 ul {
+    display: flex;
+    gap: 1vw;
+}
+
+.container3 li {
+    list-style: none;
+}
+
+.container3 li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container3 li a:hover {
+    color: #73b40e;
+}
+
+@media (max-width: 1024px) {
+    header .container {
+        margin: 0 10%;
+    }
+    .sec1,
+    .sec2 .container2,
+    footer .container3 {
+        width: 80%;
+        margin: 0 10%;
+    }
+}
+
+@media (max-width: 850px) {
+    header .container {
+        margin: 0 5%;
+    }
+    .sec1,
+    .sec2 .container2,
+    footer .container3 {
+        width: 90%;
+        margin: 0 5%;
+    }
+    .container .branding {
+        padding: 0.6em;
+    }
+    .branding h1 {
+        font-size: 2em;
+    }
+    .branding p {
+        font-size: 0.8em;
+    }
+    #head_nav li,
+    #head_nav a {
+        padding: 0.4em;
+        font-size: 0.8em;
+    }
+}
